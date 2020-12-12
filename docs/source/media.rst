@@ -59,7 +59,7 @@ For private files stored on an Amazon S3 disk, it is possible to generate a temp
 ::
 
     <?php
-    $media->getTemporaryUrl(Carbon::now->addMinutes(5));
+    $media->getTemporaryUrl(Carbon::now()->addMinutes(5));
 
 For private files, it is possible to expose them to authorized users by streaming the file from the server.
 
